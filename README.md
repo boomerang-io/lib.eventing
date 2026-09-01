@@ -1,3 +1,31 @@
+<div align="center">
+
+# 📦 This repository is archived
+
+**`io.boomerang:lib-eventing` — the CloudEvents + NATS eventing library of Boomerang Flow v3 (last release 0.4.5).**
+
+Flow v5 has no separate eventing library: inbound CloudEvents are accepted by service-core at `POST /api/v2/event`, and outbound events leave through a transactional outbox — no NATS, no broker.
+
+[![Boomerang Flow v5](https://img.shields.io/badge/Boomerang%20Flow-v5%20monorepo-6f42c1?style=for-the-badge&logo=github)](https://github.com/boomerang-io/flow)
+[![Issues](https://img.shields.io/badge/Issues-boomerang--io%2Fflow-1d76db?style=for-the-badge)](https://github.com/boomerang-io/flow/issues/new/choose)
+
+</div>
+
+> [!IMPORTANT]
+> **Archived on 2026-09-01.** Read-only; nothing is maintained here.
+> | What you probably want | Where |
+> | --- | --- |
+> | How Flow v5 sends and receives events | [`specifications/execution-model.md`](https://github.com/boomerang-io/flow/blob/feat-v5/specifications/execution-model.md) ("Outbound events: the transactional outbox") and [`specifications/api-contract.md`](https://github.com/boomerang-io/flow/blob/feat-v5/specifications/api-contract.md) ("Webhook and event endpoints"); code in `service-core/src/main/java/io/boomerang/event/` |
+> | The library as Flow v3 used it | this archive — `io.boomerang:lib-eventing:0.4.5`, referenced from the v3 line of `boomerang-io/flow` (`essentials_v3_stable` branch, `pom.xml`) |
+> | The specification it implemented | [CloudEvents](https://cloudevents.io/) — still the wire format in v5 |
+>
+> If a security fix is ever needed for a v3 install, unarchive, patch, tag, and re-archive.
+
+---
+
+<details>
+<summary>Original README (historical)</summary>
+
 # Boomerang Eventing Library <!-- omit in toc -->
 
 ## Table of Contents
@@ -204,3 +232,5 @@ All of our work is licenses under the [Apache License Version 2.0][8] unless spe
 [9]: https://mvnrepository.com/artifact/berlin.yuna/nats-server "Maven Repository - NATS Streaming Server"
 [10]: https://mvnrepository.com/artifact/org.awaitility/awaitility/4.1.1 "Maven Repository - Awaitility: a Java DSL for synchronizing asynchronous operations"
 [11]: https://docs.nats.io/nats-concepts/subjects#wildcards "NATS subject-based messaging - wildcard"
+
+</details>
